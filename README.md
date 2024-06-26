@@ -14,7 +14,6 @@ This project contains two versions of a Slot Machine game: one that runs in a we
     - [Requirements](#requirements-1)
     - [Running the Game](#running-the-game-1)
   - [How to Play](#how-to-play)
-  - [License](#license)
 
 ## Project Structure
 
@@ -25,6 +24,8 @@ The project directory contains the following files:
 - `project.js` - The JavaScript file for the browser version of the game.
 - `script.js` - The JavaScript file for the command line version of the game.
 - `README.md` - This readme file.
+
+  ![Slot-Machine-Game](img/display.png)
 
 ## Browser Version
 
@@ -56,6 +57,8 @@ The command line version of the game runs in a terminal or command prompt and do
 4. Run the following command to start the game:
    ```bash
    node script.js
+
+## How to Play 
   
 ### Command Line Version
 
