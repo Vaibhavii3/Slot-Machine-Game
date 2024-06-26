@@ -1,5 +1,4 @@
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const ROWS = 3;
     const COLS = 3;
@@ -141,8 +140,3 @@ document.addEventListener("DOMContentLoaded", () => {
         return winnings;
     };
 });
-
-
-
-
-

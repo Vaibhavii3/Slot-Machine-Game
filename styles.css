@@ -1,109 +1,104 @@
-
-@keyframes spin {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-50%); }
-}
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Console', Monaco, monospace;
+    background: linear-gradient(to bottom, #1b1b1b, #3d3d3d);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0eeee;
+    color: #fff;
 }
 
 .container {
-    background-color: #fff;
+    background-color: #2c2c2c;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     text-align: center;
-    max-width: 100%;
+    max-width: 400px;
+    width: 100%;
 }
 
 h1 {
-    color: #000000; 
+    color: #ffcc00;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px #000;
 }
 
-.game-info, .game-controls, .game-result {
-    margin-bottom: 20px;
-}
-
-.game-info p {
+#balance {
     font-size: 1.2em;
-    font-weight: bold;
-    color: #f01414; /* LimeGreen */
+    margin-bottom: 10px;
+    color: #00ff00;
 }
 
-.game-controls input {
+input {
     padding: 10px;
     margin: 5px;
-    border: 2px solid #ccc;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
     border-radius: 5px;
-    font-size: 1em;
+    border: 1px solid #ddd;
+    background-color: #444;
+    color: #fff;
 }
 
-.game-controls button {
+.button {
     padding: 10px 20px;
-    margin: 5px;
+    margin: 10px 5px;
     border: none;
     border-radius: 5px;
-    font-size: 1em;
     cursor: pointer;
-    color: #fff;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    text-shadow: 1px 1px #000;
 }
 
-#deposit-button {
-    background-color: #807779;
+.button.gold {
+    background-color: #ffcc00;
+    box-shadow: 0 5px #b38b00;
 }
 
-#spin-button {
-    background-color: #807779; 
+.button.gold:active {
+    background-color: #e6b800;
+    box-shadow: 0 2px #b38b00;
+    transform: translateY(4px);
 }
 
-#play-again-button {
-    background-color: #e81e4a; 
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+.button.red {
+    background-color: #e60000;
+    box-shadow: 0 5px #990000;
 }
 
-.slot-machine {
+.button.red:active {
+    background-color: #cc0000;
+    box-shadow: 0 2px #990000;
+    transform: translateY(4px);
+}
+
+#reels {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 .reel {
-    width: 250px;
-    height: 150px;
-    background-color: #fff;
+    width: 150px;
+    height: 100px;
+    border: 2px solid #444;
+    margin: 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2em;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+    color: #ffcc00;
+    background: linear-gradient(to bottom, #333, #000);
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    color: #0f0f0b; /* Tomato */
-    position: relative;
 }
 
-.reel-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    animation: spin 1s ease-out;
-}
-
-.reel span {
-    width: 100%;
-    height: 50px; /* Adjust this as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#result-message {
+    font-size: 1.2em;
+    margin-top: 20px;
 }
