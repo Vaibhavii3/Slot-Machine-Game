@@ -18,6 +18,7 @@
 └── README.md
 ```
   ![Slot-Machine-Game](img/display.png)
+[Slot Machine][https://slot-machine-game-orpin.vercel.app/]
 
 ## 🌐 Browser Version
 This version runs in any modern browser and provides a fully styled slot machine interface.
