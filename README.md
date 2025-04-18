@@ -1,78 +1,104 @@
-# Slot Machine Game
+## 🎰 Slot Machine Game
+#### A simple, fun, and interactive Slot Machine Game with two versions:
 
-This project contains two versions of a Slot Machine game: one that runs in a web browser with a graphical user interface (GUI) and one that runs in the command line (CLI) without a GUI.
+`🖥️ Browser Version: A graphical UI-based game using HTML, CSS, and JavaScript`
 
-## Table of Contents
+`💻 Command Line Version: A terminal-based version using Node.js`
 
-- [Slot Machine Game](#slot-machine-game)
-  - [Table of Contents](#table-of-contents)
-  - [Project Structure](#project-structure)
-  - [Browser Version](#browser-version)
-    - [Requirements](#requirements)
-    - [Running the Game](#running-the-game)
-  - [Command Line Version](#command-line-version)
-    - [Requirements](#requirements-1)
-    - [Running the Game](#running-the-game-1)
-  - [How to Play](#how-to-play)
+`Test your luck, spin the reels, and try to win big! 💰`
 
-## Project Structure
-
-The project directory contains the following files:
-
-- `index.html` - The HTML file for the browser version of the game.
-- `styles.css` - The CSS file for styling the browser version of the game.
-- `project.js` - The JavaScript file for the browser version of the game.
-- `script.js` - The JavaScript file for the command line version of the game.
-- `README.md` - This readme file.
-
+## 🗂️ Project Structure
+```
+📦 slot-machine-game
+├── index.html         // Browser version
+├── styles.css         // Styling for browser version
+├── project.js         // JS for browser version
+├── script.js          // JS for command-line version
+├── screenshot.png     // Screenshot preview
+└── README.md
+```
   ![Slot-Machine-Game](img/display.png)
 
-## Browser Version
+## 🌐 Browser Version
+This version runs in any modern browser and provides a fully styled slot machine interface.
 
-The browser version of the game provides a graphical user interface and can be run in any modern web browser.
+✅ Requirements
+Any modern web browser (Chrome, Firefox, Edge, Safari)
 
-### Requirements
+▶️ Running the Game
+Clone or download this repository.
 
-- A modern web browser (Chrome, Firefox, Edge, Safari)
+Open index.html in your browser.
 
-### Running the Game
+Follow the instructions on-screen to deposit, place bets, and spin!
 
-1. Clone this repository or download the ZIP file and extract it.
-2. Open `index.html` in your web browser.
-3. Follow the on-screen instructions to play the game.
+## 🖥️ Command Line Version
+This version runs in the terminal and interacts via prompts.
 
-## Command Line Version
+✅ Requirements
+Node.js installed on your system
 
-The command line version of the game runs in a terminal or command prompt and does not have a graphical user interface.
+▶️ Running the Game
+Clone or download this repository.
 
-### Requirements
+Open a terminal and navigate to the project directory.
 
-- Node.js installed on your system.
+### Run the following command:
 
-### Running the Game
+### 🌐 Browser Version
+- Enter a deposit amount and click "Deposit".
+- Set the number of lines (1–3) and the bet amount per line.
+- Click "Spin" to play.
+- Check results and updated balance.
+- If you run out of money, click "Play Again" to restart.
 
-1. Clone this repository or download the ZIP file and extract it.
-2. Open a terminal or command prompt.
-3. Navigate to the directory where you extracted the files.
-4. Run the following command to start the game:
-   ```bash
-   node script.js
+### 💻 Command Line Version
+- Enter a deposit amount when prompted.
+- Choose number of lines to bet on (1–3).
+- Set bet per line.
+- Game shows results and updates your balance.
+- If balance is $0, game ends. Run node script.js to restart.
 
-## How to Play 
-  
-### Command Line Version
+## 🛠️ Features
+🎮 Fully functional game logic (GUI & CLI)
 
-1. Enter a deposit amount when prompted.
-2. Enter the number of lines to bet on (1-3) when prompted.
-3. Enter the bet amount per line when prompted.
-4. The game will display the result and update your balance.
-5. If you run out of money, the game will end. You can restart it by running the node script.js command again.
+💵 Balance management with deposits and betting
 
-### Browser Version
+🔁 Randomized spins
 
-1. Enter a deposit amount and click the "Deposit" button.
-2. Enter the number of lines to bet on (1-3) and the bet amount per line.
-3. Click the "Spin" button to spin the reels.
-4. The game will display the result and update your balance.
-5. If you run out of money, the "Play Again" button will appear. Click it to restart the game.
-    
+🎨 Retro-styled UI (browser)
+
+💬 Real-time feedback on spins and results
+
+❌ Input validation to prevent invalid plays
+
+## 🚀 Tech Stack
+- JavaScript – Game logic for both CLI and browser
+- HTML/CSS – Layout and styling for the browser version
+- Node.js – Command line game execution
+
+## 🧮 Game Logic
+- Symbols have different probabilities and payout values
+- Winning condition: matching symbols in any row
+- Winnings = symbol value × bet per line
+- Inputs are validated (e.g., insufficient funds or over-bet)
+
+## 🧩 Example Gameplay
+`Deposit: $100`
+`Lines: 3`
+`Bet/line: $10`
+`Click "Spin" or confirm in terminal...`
+
+```
+C D B  
+B B C  
+B B C
+```  
+`Matching row = win!`
+
+`Winnings added to balance, otherwise deducted.`
+
+## 🙌 Acknowledgments
+- Built with vanilla JavaScript and lots of fun!
+- UI inspired by classic slot machines
+- Game logic based on randomness, probabilities, and payout strategies
